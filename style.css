@@ -58,7 +58,6 @@
     color: #0074ab;
     padding-top: 20px;
     align-items: center;
-    /* padding-left: 40px; */
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -88,6 +87,7 @@
     background-color: black;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 .image-section img{
     margin-top:0%;
@@ -117,3 +117,15 @@ p{
     justify-content: center;
     align-items: center;
 }   
+
+@media (max-width : 1276px) {
+    .container{
+        flex-direction: column;
+    }
+    .login-section{
+        width: 100%;
+    }
+    .image-section{
+        display: none;
+    }
+}
